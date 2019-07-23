@@ -16,3 +16,9 @@ spring:
 server:
   port: 8082
 
+spotify:
+  registry:
+    developer:
+      clientid: abbd4ad0848246819946bc4e67cf4116
+      clientsecret: b775db00bbf7485d8988b4c77a2e4436
+      redirecturi: http://localhost:8082/spotify/api/playlis
