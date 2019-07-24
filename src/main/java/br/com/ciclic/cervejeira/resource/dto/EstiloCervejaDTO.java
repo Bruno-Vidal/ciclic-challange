@@ -1,13 +1,10 @@
-package br.com.ciclic.cervejeira.resource.request;
+package br.com.ciclic.cervejeira.resource.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Builder;
 import lombok.Data;
 
 @Data
-@Builder
-public class CervejaRequest {
-
+public abstract class EstiloCervejaDTO {
     @JsonProperty("name")
     private String nome;
 

@@ -1,4 +1,4 @@
-package br.com.ciclic.cervejeira.resource.response;
+package br.com.ciclic.cervejeira.resource.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class EstiloCervejaResponse {
+public class EstiloCervejaComPlayListResponse {
     @JsonProperty("beerStyle")
     private String estiloCerveja;
 

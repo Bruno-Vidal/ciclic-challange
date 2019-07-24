@@ -1,7 +1,7 @@
 package br.com.ciclic.cervejeira.business.exception;
 
-public class BeerStyleNotFoundException extends Exception {
-    public BeerStyleNotFoundException(String msg) {
-        super(msg);
+public class BeerStyleNotFoundException extends BaseNotFoundException {
+    public BeerStyleNotFoundException(Long id) {
+        super("Cerveja com id: " + id + " não foi encontrado");
     }
 }

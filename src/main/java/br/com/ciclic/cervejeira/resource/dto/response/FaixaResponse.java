@@ -1,4 +1,4 @@
-package br.com.ciclic.cervejeira.resource.response;
+package br.com.ciclic.cervejeira.resource.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
@@ -13,6 +13,6 @@ public class FaixaResponse {
     @JsonProperty("artist")
     private String artista;
 
-    @JsonProperty("artist")
+    @JsonProperty("link")
     private String link;
 }

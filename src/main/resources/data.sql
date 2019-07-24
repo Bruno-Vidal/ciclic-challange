@@ -9,7 +9,7 @@ CREATE TABLE beerStyle (
 INSERT INTO
   beerStyle(nome,temperatura_minima,temperatura_maxima)
 values
-  ('Weissbier',-1,-3),
+  ('Weissbier',-3,-1),
   ('Pilsens',-2,4),
   ('Weizenbier',-4,6),
   ('Red ale',-5,5),

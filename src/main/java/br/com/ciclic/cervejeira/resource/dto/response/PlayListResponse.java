@@ -1,10 +1,10 @@
-package br.com.ciclic.cervejeira.resource.response;
+package br.com.ciclic.cervejeira.resource.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Data;
 
-import java.util.Set;
+import java.util.List;
 
 @Data
 @Builder
@@ -14,5 +14,5 @@ public class PlayListResponse {
     private String nome;
 
     @JsonProperty("tracks")
-    private Set<FaixaResponse> faixas;
+    private List<FaixaResponse> faixas;
 }

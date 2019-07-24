@@ -1,7 +1,10 @@
 package br.com.ciclic.cervejeira.business.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,6 +17,9 @@ import javax.persistence.Table;
 @Table(name = "beerStyle")
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
 public class EstiloCerveja {
 
     @Id
@@ -29,4 +35,9 @@ public class EstiloCerveja {
 
     @Column(name = "temperatura_maxima")
     private Long temperaturaMaxima;
+
+    public Long temperaturaPerfeita(){
+        return (temperaturaMaxima + temperaturaMinima)/2;
+    }
+
 }
